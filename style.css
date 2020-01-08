@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    text-align: right;
+    text-align: center;
 }
 
 body {
@@ -24,11 +24,30 @@ li {
     display: inline-block;
 }
 
+header {
+    font-size: 20px;
+    font-family: cursive;
+
+}
+
+footer {
+    background: lightgreen;
+    border-radius: 20px;
+    border: solid darkolivegreen;
+    left: -500px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: lightskyblue;
+    font-weight: 500;
+}
+
 
 
 #special {
     color: green;
-    font-size: 40;
+    font-size: 40px;
 }
 
 #cool-square{
@@ -53,11 +72,38 @@ li {
     border-radius: 15px;
     border: dotted lightseagreen 5px;
     background: yellow;
-    margin: 0 auto;
     color: orange;
-    padding: 50px;
+    padding: 20px;
     text-align: right;
     font-size: 11px;
+    margin: 10px auto;
+    /* margin: 10px; */
 
+}
 
+.maintext {
+    color: lightseagreen;
+    font-size: 20;
+    background: darkorchid;
+    border-radius: 20px;
+    border: dotted darksalmon;
+    padding: 10px;
+}
+
+#headline {
+    background: darkslategrey;
+    border-radius: 20px;
+    border: dotted darkolivegreen;
+    color: lightgray;
+}
+
+.blinking{
+    animation:blinkingText 0.8s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color: transparent;  }
+    100%{   color: #000;    }
 }
