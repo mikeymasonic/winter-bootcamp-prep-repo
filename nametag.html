@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Nametag</title>
     <link rel="stylesheet" href="nametagstyle.css">
+    
 </head>
 <body>
-    <div class="nametag">
+    <div class="nametag" id="nametag">
         <div class="words">
             <div class="hello">
                 <strong>hello</strong>
@@ -17,10 +18,18 @@
                 my name is
             </div>
         </div>
-        <div class="front">
+        <div id="the-name" class="front">
             Mikey
         </div>
     </div>
-    
+
+    <label>
+        Enter your nametag
+        <input id="bobby">
+        <button id="bobby-button">
+            Submit
+        </button>
+    </label>
+    <script type ="module" src="script.js"></script>
 </body>
 </html>
